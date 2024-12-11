@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Section Styles */
+.header {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    max-height: 50px; /* Adjust logo size as needed */
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Navigation Links */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Spacing between links */
+    margin: 0;
+    padding: 0;
+    margin-left: 650px;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* YouTube Button */
+.youtube-button {
+    background: #ff0000 ;
+    color: #fff !important;
+    padding: 10px 15px !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    font-weight: 600 !important;
+    margin-right: 20px !important;
+}
+
+/* Green Section Styles */
+.green-section {
+    background: #2D6A4F; /* Vibrant green background */
+    color: #fff; /* White text for contrast */
+    height: 83vh; /* Full viewport height */
+    justify-content: center; /* Horizontally center content */
+    padding: 20px; /* Add some padding for smaller screens */
+}
+
+.green-content {
+    max-width: 800px; /* Limit content width */
+}
+
+.green-content h1 {
+    font-size: 3.5rem; /* Large heading text */
+    text-align: left;
+    line-height: 1.3; /* Better readability */
+    margin-bottom: -30px;
+}
+
+.save {
+    padding: 30px 20px;
+    margin-bottom: 50px;
+}
+
+.learn-more-btn {
+    background: #fff; /* White button background */
+    color: #000000; /* Green text */
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-left:25px;
+    
+}
+
+.learn-more-btn:hover {
+    background: #2d8c00; /* Slightly darker green on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Statistics Section Styles */
+.statistics-section {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between; /* Spread items to left and right */
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.2rem; /* Adjust font size */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.stat-item {
+    color: #fff; /* White text */
+    font-weight: bold;
+}
+
+.divider {
+    flex: 1; /* Take up remaining space */
+    height: 1px;
+    background: #fff; /* White divider line */
+    margin: 0 20px; /* Spacing around the divider */
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Supporters Section */
+.supporters {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.supporters .logos img {
+    max-width: 100px;
+    margin: 10px;
+}
+
+/* Our Work Section */
+.work {
+    padding: 50px 0;
+    background: #f1f1f1;
+}
+
+.work h2 {
+    margin-bottom: 20px;
+}
+
+.work-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Events Section */
+.events {
+    padding: 50px 0;
+}
+
+.event-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.event-card {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

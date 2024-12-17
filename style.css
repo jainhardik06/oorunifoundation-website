@@ -460,3 +460,171 @@ body {
 .see-more-btn:hover {
     background-color: #ddd;
 }
+
+.donation-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+/* Left Section Content */
+.donation-content {
+    max-width: 600px;
+    margin-left: -80px;
+}
+
+.donation-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.donation-content h1 span {
+    font-weight: bold;
+}
+
+.donation-content p {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.donation-legend {
+    list-style: none;
+}
+
+.donation-legend li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.75rem;
+    border-radius: 50%;
+}
+
+/* Chart Section */
+
+.donation-section {
+    background-color: black;
+}
+
+.donation-content {
+    color: #FFFFFF;
+}
+.donation-chart {
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+}
+
+.chart {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        #C2F0C2 0deg 144deg,      /* 40% */
+        #C5B4F0 144deg 270deg,    /* 35% */
+        #FCECB8 270deg 306deg,    /* 10% */
+        #F8D578 306deg 342deg,    /* 10% */
+        #F79AC4 342deg 360deg     /* 5% */
+    );
+}
+
+.chart-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* News Section */
+.news-section {
+    padding: 50px 50px;
+  }
+  
+  .news {
+    display: flex;
+    align-items: self-start;
+    gap: 25px; /* Space between the line and text */
+    padding: 25px 0px;
+  }
+  
+  .line-news {
+    margin-top: 15px;
+    width: 100px; /* Adjust line length as needed */
+    height: 2px; /* Line thickness */
+    background-color: #2D6A4F; /* Line color */
+  }
+
+  
+  .news h3 {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    text-transform: uppercase; /* Make the text uppercase */
+    font-weight: 500; /* Adjust font weight */
+    margin: 0;
+    width: max-content;
+  }
+  
+  .news-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .news-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .news-image {
+    width: 302px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .news-title {
+    margin: 10px 15px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+    padding-left: 8px;
+    max-width: 295px;
+  }
+  
+  .news-description {
+    margin: 0 15px 15px;
+    font-size: 14px;
+    color: #555;
+    text-align: justify;
+    padding-left: 8px;
+    max-width: 295px;
+  }
+  

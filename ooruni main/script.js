@@ -24,3 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+//donate sticky
+document.querySelector('.donate-sticky span').addEventListener('click', function () {
+    const dropdown = document.querySelector('.donate-sticky ul');
+    dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
+});

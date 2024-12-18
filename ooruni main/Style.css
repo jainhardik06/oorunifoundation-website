@@ -105,3 +105,56 @@ text-align: center; /* Center inline-block elements within this container */
     color: #adb5bd;
     text-decoration: none;
 }
+
+
+/*-------Donate Sticky--------*/
+.donate-sticky {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    background-color: #43893f;
+    padding: 10px 15px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+.donate-sticky:hover {
+    background-color: #2e702e; /* Slightly darker blue on hover */
+    transform: translateY(-50%) scale(1.1); /* Scale up slightly */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 20px; /* Stronger shadow */
+}
+
+.donate-sticky img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Add animation to the image */
+}
+
+.donate-sticky:hover img {
+    transform: rotate(-15deg); /* Rotate the hand icon slightly on hover */
+}
+
+.donate-sticky a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .donate-sticky {
+        display: none;
+    }
+}

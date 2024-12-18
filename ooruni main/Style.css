@@ -1,0 +1,107 @@
+ /* Dropdown styling specific to Our Work */
+ .dropdown-item:hover,
+ .dropdown-item:focus,
+ .dropdown-item:active {
+     background-color: #dfd !important; /* Light green background on hover/click */
+     color: black !important; /* Maintains black text for visibility */
+ }
+ /* CSS to handle hover on large screens */
+ @media (min-width: 992px) {
+     .navbar .dropdown:hover .dropdown-menu {
+         display: block;
+     }
+ }
+ 
+ /* Ensure that the dropdown does not stay open on mobile when not needed */
+ @media (max-width: 991px) {
+     .navbar .dropdown .dropdown-menu {
+         display: none;
+     }
+ 
+     .navbar .dropdown .dropdown-menu.show {
+         display: block;
+     }
+ }
+ @media (max-width: 992px) {
+   .dropdown-menu .dropdown-item.active {
+       background-color: #fdf !important;
+       color: black;
+   }
+ }
+
+ /* From Uiverse.io by cssbuttons-io, modified for .button-73 */
+ .button-73 {
+     --color: rgb(0, 149, 0);
+     font-family: inherit;
+     display: inline-block;
+     width: 8em;
+     height: 2.6em;
+     line-height: 2.6em; /* Matches height for vertical centering */
+     margin: 20px;
+     position: relative;
+     cursor: pointer;
+     overflow: hidden;
+     border: 2px solid var(--color);
+     transition: color 0.5s;
+     z-index: 1;
+     font-size: 17px;
+     border-radius: 6px;
+     font-weight: 500;
+     color: var(--color);
+     text-decoration: none; /* Remove underline */
+     text-align: center; /* Ensures horizontal centering */
+     padding: 0; /* Removes extra padding */
+ }
+
+.button-73:before {
+content: "";
+position: absolute;
+z-index: -1;
+background: var(--color);
+height: 150px;
+width: 200px;
+border-radius: 50%;
+}
+
+.button-73:hover {
+color: #fff;
+}
+
+.button-73:before {
+top: 100%;
+left: 100%;
+transition: all 0.7s;
+}
+
+.button-73:hover:before {
+top: -30px;
+left: -30px;
+}
+
+.button-73:active:before {
+background: rgb(0, 0, 0);
+transition: background 0s;
+}
+
+/* Additional styles for centering and parent container if needed */
+.button-container {
+text-align: center; /* Center inline-block elements within this container */
+}
+
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+.team img {
+    border-radius: 50%;
+}
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}

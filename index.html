@@ -164,11 +164,11 @@
                 <div class="form-inline">
                   <div class="form-group">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <input type="text" id="firstName" name="firstName" placeholder="FirstName" required>
                   </div>
                   <div class="form-group">
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Lastname" required>
                   </div>
                 </div>
         
@@ -186,6 +186,23 @@
                     <option value="Other">Other</option>
                   </select>
                 </div>
+
+                <div class="form-inline">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Alternate Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Alternate Phone number" required>
+                </div>
+              </div>
+        
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" placeholder="Youremail@gmail.com" required>
+                </div>
+
                 <div class="form-inline">
                   <div class="form-group">
                     <label for="country">-- Select Country --</label>
@@ -205,37 +222,29 @@
                 <div class="form-inline">
                   <div class="form-group">
                     <label for="district">District</label>
-                    <input id="district" name="district" required></input>
+                    <input id="district" name="district" placeholder="District" required></input>
                   </div>
                   <div class="form-group">
                     <label for="pincode">Pincode</label>
-                    <input type="number" id="pincode" name="pincode" required>
+                    <input type="number" id="pincode" name="pincode" placeholder="Pincode" required>
                   </div>
                 </div>
                 
-        
                 <div class="form-group">
-                  <label for="phone">Phone Number</label>
-                  <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                  <label for="phone">Alternate Phone Number</label>
-                  <input type="tel" id="phone" name="phone" required>
+                  <label for="pincode">Address</label>
+                  <input type="text" id="pincode" name="pincode" placeholder="Address" required>
                 </div>
         
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" required>
-                </div>
+
 
                 <div class="form-inline">
                 <div class="form-group">
                   <label for="fatherName">Father's Name</label>
-                  <input type="text" id="fatherName" name="fatherName" required>
+                  <input type="text" id="fatherName" name="fatherName" placeholder="Father's Name" required>
                 </div>
                 <div class="form-group">
                   <label for="motherName">Mother's Name</label>
-                  <input type="text" id="motherName" name="motherName" required>
+                  <input type="text" id="motherName" name="motherName" placeholder="Mother's Name" required>
                 </div>
               </div>
                 <div class="form-group">
@@ -248,21 +257,21 @@
                 </div>
                 <div class="form-group">
                   <label for="singleParentType">If Single Parent, Type</label>
-                  <input type="text" id="singleParentType" name="singleParentType">
+                  <input type="text" id="singleParentType" placeholder="Type..." name="singleParentType">
                 </div>
                 
                 <div class="form-group">
                   <label for="guardianOccupation">Father/Guardian Occupation</label>
-                  <input type="text" id="guardianOccupation" name="guardianOccupation" required>
+                  <input type="text" id="guardianOccupation" placeholder="Father/Guardian Occupation" name="guardianOccupation" required>
                 </div>
                 <div class="form-group">
                   <label for="guardianIncome">Father/Guardian Annual Income</label>
-                  <input type="number" id="guardianIncome" name="guardianIncome" required>
+                  <input type="number" id="guardianIncome" placeholder="Father/Guardian Annual Income" name="guardianIncome" required>
                 </div>
           
                 <div class="form-group">
                   <label for="school">Name of School/College</label>
-                  <input type="text" id="school" name="school" required>
+                  <input type="text" id="school" placeholder="College/University..." name="school" required>
                 </div>
                 <div class="form-inline">
                   <div class="form-group">
@@ -276,23 +285,23 @@
                   </div>
                   <div class="form-group">
                     <label for="year">Year</label>
-                    <input type="text" id="year" name="year" required>
+                    <input type="text" id="year" placeholder="Year" name="year" required>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="course">Course Opted</label>
-                  <input type="text" id="course" name="course" required>
+                  <input type="text" id="course" placeholder="Course Opted" name="course" required>
                 </div>
                 <div class="form-group">
                   <label for="joinYear">Year of Joining</label>
-                  <input type="number" id="joinYear" name="joinYear" required>
+                  <input type="number" placeholder="Year" id="joinYear" name="joinYear" required>
                 </div>
           
                 <!-- Scholarship Details -->
                  <div class="form-inline">
                 <div class="form-group">
                   <label for="requisitionAmount">Requisition Amount</label>
-                  <input type="number" id="requisitionAmount" name="requisitionAmount" required>
+                  <input type="number" id="requisitionAmount" placeholder="₹" name="requisitionAmount" required>
                 </div>
                 <div class="form-group">
                   <label for="dueDate">Due Date for Fee Payment</label>

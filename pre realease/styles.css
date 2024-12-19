@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-text {
+    padding: 35px;
+}
+
+.text-head {
+    text-align: center;
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 400;
+    font: bolder;
+    font-size: 55px;
+    font-style: normal;
+}
+
+.text-subhead {
+    color: #353535;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 10px;
+}
+
+.card1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: .08s ease-in-out;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid #b2b9c2;
+    width: 18vw;
+    height: 37vh;
+    margin: 25px 20px 20px 20px;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+
+.card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 4px;
+
+}
+
+.card-txt {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.card-txt h4 {
+    color: #333;
+}
+
+.card-txt h4 {
+    color: #000000;
+    font: 400;
+    font-size: 17px;
+    width: 100%;
+    font-weight: 350;
+}
+
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px ;
+    padding: 20px;
+    width: min(300px, 100%);
+    background-color: #fefefe;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: #141417;
+  }
+  .card__hero {
+    background-image: url(images/1.jpg);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    height: 40vh;
+  }
+  .card__hero .card__job-title {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 2rem;
+  }
+  .card__job-title {
+    font-size: 1rem;
+    align-items: center;
+  }
+  .card__hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    font-weight: 700;
+  }
+  .card__footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0.75rem;
+    row-gap: 1rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+  @media (min-width: 340px) {
+    .card__footer {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+  .card__job-summary {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+  }
+  .card__btn {
+    width: 100%;
+    font-weight: 400;
+    border: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1rem;
+    background-color: #141417;
+    color: #fff;
+    font-size: 1rem;
+  }
+  @media (min-width: 340px) {
+    .card__btn {
+      width: max-content;
+    }
+  }
+  

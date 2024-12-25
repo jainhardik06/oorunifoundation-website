@@ -97,3 +97,23 @@ hr {
     margin-top: 100px;
 }
 
+
+@media (max-width: 768px) {
+  .head-img img {
+      height: 50vh;
+
+  }
+  .head-img {
+    height: fit-content;
+  }
+}
+
+/* For small screens (mobile devices) */
+@media (max-width: 576px) {
+  .head-img img {
+      height: 40vh;
+  }
+  .head-img {
+    height: fit-content;
+  }
+}

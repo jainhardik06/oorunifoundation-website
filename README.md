@@ -1,1 +1,1 @@
-# oorunifoundation-website
+# Ooruni

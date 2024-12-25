@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooruni Foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .card {
+            margin: 20px 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-left: 5px solid #4CAF50;
+            background-color: #dfd;
+            border-radius: 10px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card-title {
+            color: #2e7d32;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .card-text {
+            color: #4c4c4c;
+            font-size: 1rem;
+        }
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #2e7d32;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .bw-to-color {
+            filter: grayscale(100%);  /* Start in black and white */
+            transition: filter 0.3s ease;  /* Smooth transition for the filter */
+        }
+          
+        .bw-to-color:hover {
+            filter: grayscale(0%);  /* Full color on hover */
+        }
+          
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="../ooruni main/home/home.html">
+                <img src="logo.png" alt="Ooruni Logo" class="me-2">
+            </a>
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="../ooruni main/home/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active fw-bold" href="../ooruni main/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Work
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../ooruni main/environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="../ooruni main/education.html">Education</a></li>
+                            <li><a class="dropdown-item" href="../ooruni main/equal-opportunity.html">Equal Opportunity</a></li>
+                            <li><a class="dropdown-item" href="../ooruni main/freedom-carnival.html">Freedom Carnival</a></li>
+                            <li><a class="dropdown-item" href="../ooruni main/wwaa.html">WWAA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Media
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="../ooruni main/media Gallery/gallery.html">Events Gallery</a></li>
+                          <li><a class="dropdown-item" href="../ooruni main/pre realease/press.html">Media Coverage</a></li>
+                      </ul>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="../ooruni main/contact/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- CTA Button -->
+                <a href="donate.html" class="button-73">Donate</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Donate sticky -->
+    <div class="donate-sticky">
+        <a href="donate.html" target="_blank">
+            <img src="../image/image.png" alt="Donate">
+            DONATE
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+<section class="hero-section text-center text-white" style="background: linear-gradient(to top, #d4edda, #ffffff); padding: 100px 0;">
+    <div class="container">
+        <!-- Hero Content -->
+        <h1 class="display-4 fw-bold text-dark">We are a nonprofit team working worldwide</h1>
+        <p class="lead text-secondary mb-5">
+            Ooruni Foundation is a Non Profit and a Non-Governmental Organization (NGO) which anchors, augments and advocates the pivotal 3Es of human life – Education, Environment and Equal Opportunities for a sustainable community development. Ooruni Foundation is a registered Trust, formed by six members during Chennai floods in 2015. Ooruni has got more than 100 dedicated volunteers and most of them are corporate employees.
+        </p>
+        <div class="overflow-hidden">
+            <div id="heroCarousel" class="carousel slide mx-auto" style="max-width: 800px;" data-bs-ride="carousel" data-bs-interval="3000">
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../image/1.png" class="d-block w-100 rounded-3 shadow-lg" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../image/2.png" class="d-block w-100 rounded-3 shadow-lg" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400/cccccc" class="d-block w-100 rounded-3 shadow-lg" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400/dddddd" class="d-block w-100 rounded-3 shadow-lg" alt="Slide 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/800x400/eeeeee" class="d-block w-100 rounded-3 shadow-lg" alt="Slide 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Space Between Image and Mission/Vision -->
+        <div class="mt-4"></div>
+
+        <!-- Mission and Vision -->
+        <div class="row text-center text-md-start mt-5 px-3">
+            <!-- Mission -->
+            <div class="col-md-6 mb-4 px-md-5">
+                <h5 class="text-uppercase fw-bold text-dark">Our Mission</h5>
+                <p class="fw-bold text-dark">Empowering communities through education, inclusion, and environmental sustainability.</p>
+                <p class="text-dark">
+                    Ooruni Foundation focuses on making education accessible under EduFuture India, supporting underprivileged children, especially through I Support a Girl for wards of HIV-positive parents. Environmental sustainability is prioritized through the Mass Plantation Drive, planting over 3600 saplings across Tamil Nadu. Initiatives like We Are Your Voice and Give Their World aim to empower differently-abled individuals by providing opportunities and supportive environments.
+                </p>
+            </div>
+            <!-- Vision -->
+            <div class="col-md-6 mb-4 px-md-5">
+                <h5 class="text-uppercase fw-bold text-dark">Our Vision</h5>
+                <p class="fw-bold text-dark">Creating an inclusive, sustainable, and empowered society.</p>
+                <p class="text-dark">
+                    Ooruni Foundation envisions equal opportunities for all, especially women, through programs like AWAKE for aspiring women entrepreneurs and the Working Women Achievers Award (WWAA), celebrating their achievements and resilience. The vision extends to fostering education, empowering women, and promoting a greener future for generations to come.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Awards -->
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Awards & Recognitions</h2>
+            <div class="row">
+                <!-- Award 1 -->
+                <div class="col-md-3 mb-4">
+                    <img src="https://via.placeholder.com/150" alt="Award Image 1" class="img-fluid mb-3 rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4 class="fw-bold">2021</h4>
+                    <p>Green Initiative Award</p>
+                </div>
+                <!-- Award 2 -->
+                <div class="col-md-3 mb-4">
+                    <img src="https://via.placeholder.com/150" alt="Award Image 2" class="img-fluid mb-3 rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4 class="fw-bold">2018</h4>
+                    <p>Eco Excellence Award</p>
+                </div>
+                <!-- Award 3 -->
+                <div class="col-md-3 mb-4">
+                    <img src="https://via.placeholder.com/150" alt="Award Image 3" class="img-fluid mb-3 rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4 class="fw-bold">2014</h4>
+                    <p>Environmental Hero Award</p>
+                </div>
+                <!-- Award 4 -->
+                <div class="col-md-3 mb-4">
+                    <img src="https://via.placeholder.com/150" alt="Award Image 4" class="img-fluid mb-3 rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+                    <h4 class="fw-bold">2010</h4>
+                    <p>Sustainability Award</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- Goals -->
+    <div class="container-fluid p-0" style="background-color: #f8f9fa;">
+        <div class="container py-5">
+            <h2 class="text-center fw-bold mb-4" style="color: #000;">Our Goals</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Affordable Education for All</h5>
+                            <p class="card-text text-dark">Under <strong>EduFuture India</strong>, we make education accessible for underprivileged kids, especially through initiatives like <strong>I Support a Girl</strong> for children of HIV-positive parents.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Greener Earth</h5>
+                            <p class="card-text text-dark">Through the <strong>Mass Plantation Drive</strong>, we planted over 3,600 saplings across Tamil Nadu by October 2019, promoting sustainability and a greener planet.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Empowering Differently-Abled</h5>
+                            <p class="card-text text-dark">Initiatives like <strong>We Are Your Voice</strong> and <strong>Give Their World</strong> connect differently-abled students with opportunities and platforms to showcase their talents.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Women Empowerment</h5>
+                            <p class="card-text text-dark">Through <strong>AWAKE</strong> (Advocacy to Women’s Ability and Knowledge for Empowerment), we support aspiring women entrepreneurs and provide equal opportunities for growth.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Recognizing Women Achievers</h5>
+                            <p class="card-text text-dark">The <strong>Working Women Achievers Award (WWAA)</strong> highlights the achievements of women who overcome challenges and transform them into stepping stones for success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+
+    <!-- Team Section -->
+    <section class="py-5" style="background-color: #ffff;">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Meet Our Team</h2>
+            <div class="row">
+                <!-- Team Member 1 -->
+                <div class="col-md-4 mb-4">
+                    <img src="../team/ra.jpg" class="img-fluid rounded-circle mb-3 bw-to-color" style="width: 250px; height: 250px; object-fit: cover;" alt="Team Member 1">
+                    <h5>Rathinavel Rajan S</h5>
+                    <p class="text-muted">Founder and Managing Trustee</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-md-4 mb-4">
+                    <img src="../team/san.jpg" class="img-fluid rounded-circle mb-3 bw-to-color" style="width: 250px; height: 250px; object-fit: cover;" alt="Team Member 2">
+                    <h5>Sankar Sundaralingam</h5>
+                    <p class="text-muted">Co-founder and Trustee</p>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-md-4 mb-4">
+                    <img src="../team/po.jpg" class="img-fluid rounded-circle mb-3 bw-to-color" style="width: 250px; height: 250px; object-fit: cover;" alt="Team Member 3">
+                    <h5>Ponnuswamy Perumal</h5>
+                    <p class="text-muted">Trustee</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Team Member 4 -->
+                <div class="col-md-4 mb-4">
+                    <img src="../team/aru.jpg" class="img-fluid rounded-circle mb-3 bw-to-color" style="width: 250px; height: 250px; object-fit: cover;" alt="Team Member 4">
+                    <h5>Arumugam</h5>
+                    <p class="text-muted">Trustee</p>
+                </div>
+                <!-- Team Member 5 -->
+                <div class="col-md-4 mb-4">
+                    <img src="../team/ass.jpg" class="img-fluid rounded-circle mb-3 bw-to-color" style="width: 250px; height: 250px; object-fit: cover;" alt="Team Member 5">
+                    <h5>Arun Kumar</h5>
+                    <p class="text-muted">Treasurer and Trustee</p>
+                </div>
+                <!-- Team Member 6 -->
+                <div class="col-md-4 mb-4">
+                    <img src="../team/ez.jpg" class="img-fluid rounded-circle mb-3 bw-to-color" style="width: 250px; height: 250px; object-fit: cover;" alt="Team Member 6">
+                    <h5>Ezhilvel</h5>
+                    <p class="text-muted">Trustee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Footer -->
+    <div class="w-100" style="background-color: #000000;">
+        <footer class="container py-5" style="padding-top: 50px; padding-bottom: 30px;">
+          <div class="row">
+            <!-- Column 1: About Us -->
+            <div class="col-6 col-md-2 mb-4" style="padding-top: 20px;">
+              <h5 class="text-white">Our Team</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-white">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Team</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">What We Do</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 2: More -->
+            <div class="col-6 col-md-2 mb-4" style="padding-top: 20px;">
+              <h5 class="text-white">More</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Projects</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Events</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Donate</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Blog</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 3: Connect -->
+            <div class="col-6 col-md-2 mb-4" style="padding-top: 20px;">
+              <h5 class="text-white">Connect</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Facebook</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Twitter</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">LinkedIn</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 4: Subscribe -->
+            <div class="col-md-5 offset-md-1 mb-4" style="padding-top: 20px;">
+              <form>
+                <h5 class="text-white">Subscribe to get latest updates</h5>
+                <p class="text-light">Stay updated with our projects, events, and more.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="email" class="form-control" placeholder="Your email">
+                  <button class="btn btn-danger" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom -->
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top" style="border-color: #444444;">
+            <p class="mb-0 text-light">© 2024 Ooruni Foundation. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-light" href="#" aria-label="Twitter"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-light" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-light" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>     
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="script.js">
+</body>
+</html>

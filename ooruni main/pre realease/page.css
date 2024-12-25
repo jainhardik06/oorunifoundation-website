@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9 !important;
+}
+
+.main-text {
+    padding: 35px 35px 25px 35px;
+}
+
+.text-head {
+    text-align: center;
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 400;
+    font: bolder;
+    font-size: 55px;
+    font-style: normal;
+}
+
+.text-subhead {
+    color: #353535;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+.text-date .date {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    padding-left: 110px;
+}
+
+.main-box {
+    background-color: #f9f9f9;
+}
+
+.box {
+    overflow: hidden;
+    min-height: 55vh;
+    margin: 0 100px 0 100px;
+
+}
+.box img {
+    width: 100%;
+}
+.foot-news {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #f9f9f9;
+}
+
+.foot-news ul {
+    display: flex;
+    gap: 25px;
+    margin-top: 0px;
+    margin-left: 70px;
+}
+.foot-news li {
+    list-style: none;
+    justify-content: left;
+    gap: 18px;
+}
+.foot-news ul li b {
+    font-weight: 500;
+}
+
+.project-section {
+    text-align: center;
+    margin: 40px 0; /* Adds space above and below */
+}
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+.team img {
+    border-radius: 50%;
+}
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.foot {
+    margin-top: 100px;
+}
+
+
+@media (max-width: 576px) {
+    .foot-news {
+        display: flex;
+        justify-content: space-between; 
+        background-color: #f9f9f9;
+    }
+    
+    .foot-news ul {
+        display: flex;
+        gap: 15px;
+        margin-top: 0px;
+        margin-left: 70px;
+    }
+    .foot-news li {
+        list-style: none;
+        justify-content: left;
+        font-size: small;
+    }
+    .text-date {
+        display: none;
+    }
+}

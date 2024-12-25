@@ -183,14 +183,23 @@ hr {
     margin: 1rem 7rem !important; 
   }
 
-.filter-container {
+  .filter-container {
     text-align: right;
     margin-top: 40px;
     margin-right: 120px;
     margin-bottom: 50px;
-  }
-  
-  select#filter-dropdown {
+}
+
+label.filter-label {
+    font-size: 18px;
+    color: #333;
+    margin-right: 10px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+select#filter-dropdown {
     padding: 10px;
     border: 2px solid #343a40;
     background-color: #f5fcfc;
@@ -198,12 +207,12 @@ hr {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  select#filter-dropdown:focus {
+}
+
+select#filter-dropdown:focus {
     outline: none;
     border-color: #343a40;
-  }
+}
 
 .img-cont {
     padding: 0 120px;
@@ -249,4 +258,3 @@ hr {
 .foot {
     margin-top: 100px;
 }
-

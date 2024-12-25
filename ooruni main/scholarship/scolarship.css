@@ -152,6 +152,8 @@ text-align: center; /* Center inline-block elements within this container */
     .donate-sticky {
         display: none;
     }
+
+    
 }* {
     margin: 0;
     padding: 0;

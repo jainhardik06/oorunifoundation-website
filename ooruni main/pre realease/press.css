@@ -230,7 +230,7 @@ text-align: center; /* Center inline-block elements within this container */
 
 .project-section {
     text-align: center;
-    margin: 40px 0; /* Adds space above and below */
+    margin: 40px 0;
 }
 
 .hero-section {
@@ -254,55 +254,65 @@ text-align: center; /* Center inline-block elements within this container */
     margin-top: 100px;
 }
 
-
 .card {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px ;
-    padding: 20px;
-    width: min(300px, 100%);
-    background-color: #fefefe;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    color: #141417;
-  }
-  .card__hero {
-    background-image: url(images/1.jpg);
-    border-radius: 0.5rem 0.5rem 0 0;
-    padding: 1.5rem;
-    font-size: 0.875rem;
-    height: 40vh;
-  }
-  .card__hero .card__job-title {
-    margin: 2rem 0;
-    font-size: 2rem;
-    font-weight: 600;
-    padding-right: 2rem;
-  }
-  .card__job-title {
-    font-size: 1rem;
-    align-items: center;
-  }
-  .card__hero-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    font-weight: 700;
-  }
-  .card__footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 0.75rem;
-    row-gap: 1rem;
-    font-weight: 700;
-    font-size: 0.875rem;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px ;
+  padding: 20px;
+  width: min(300px, 100%);
+  background-color: #fefefe;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: #141417;
+  transition: box-shadow 0.3s ease; 
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card__hero {
+  background-image: url(images/1.jpg);
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  height: 40vh;
+}
+
+.card__hero .card__job-title {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+
+.card__job-title {
+  font-size: 1rem;
+  align-items: center;
+}
+
+.card__hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0.75rem;
+  row-gap: 1rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
   @media (min-width: 340px) {
     .card__footer {
       flex-direction: row;

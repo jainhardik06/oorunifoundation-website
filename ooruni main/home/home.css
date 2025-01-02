@@ -167,32 +167,35 @@ text-align: center; /* Center inline-block elements within this container */
     display: flex;
     justify-content: flex-start;
     align-items: center; 
-    padding-top: 300px;
+    padding-top: 200px;
     text-align: center;
     position: relative;
   }
   
+
   .green-content h1 {
-    position: absolute;
-    margin-left: 120px;
-    margin-top: 150px;
-    transform: translate(-50%, -50%); 
+    position: relative;
+    left: 154px;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
+  
   .green-content h2 {
-    position: absolute;
-    margin-left: 220px;
-    margin-top: 152px;
-    transform: translate(-50%, -50%); 
+    position: relative;
+    left: 154px;
+    top: 40%; 
+    transform: translate(-50%, -50%);
   }
+  
   .green-content h1 span, .green-content h2 span {
     display: block;
     width: 100%;
     color: #ffffff;
-    transform: translateY(-50px);
     opacity: 0;
+    transform: translateY(-20px); /* Subtle initial offset */
     animation-name: alternateText;
-    animation-timing-function: ease-in-out; /* Smooth easing */
-    animation-duration: 8s; /* Adjust duration to control the speed */
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s; /* Shortened for quicker feedback */
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
   }
@@ -202,38 +205,58 @@ text-align: center; /* Center inline-block elements within this container */
   }
   
   .green-content h2 span {
-    animation-delay: 4s;
+    animation-delay: 2s; /* Adjusted delay for smoother alternation */
   }
-
   
   @keyframes alternateText {
-    0%, 100% {
-        transform: translateY(0);
-        opacity: 1;
+    0%, 40% {
+      opacity: 1;
+      transform: translateY(0);
     }
-    20%, 80% {
-        transform: translateY(0);
-        opacity: 1;
+    50%, 100% {
+      opacity: 0;
+      transform: translateY(-20px); /* Keep consistent offset */
     }
-    30%, 50% {
-        transform: translateY(-50px);
-        opacity: 0;
+  }
+  
+
+  /* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .green-content h1,
+    .green-content h2 {
+      font-size: 1.5em;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
     }
-    60%, 70% {
-        transform: translateY(0);
-        opacity: 1;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 767px) {
+    .green-content h1,
+    .green-content h2 {
+      font-size: 1.2em;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
     }
-}
+  
+    .green-content .save a {
+      font-size: 0.9em;
+      padding: 10px 20px;
+    }
+  }
+  
   @media (max-width: 600px) {
     .green-content h1 {
-      margin-left: 60px;
-      margin-top: 100px;
+      /* margin-left: 60px;
+      margin-top: 100px; */
       transform: translate(-50%, -50%);
     }
   
     .green-content h2 {
-      margin-left: 100px;
-      margin-top: 120px;
+      /* margin-left: 100px;
+      margin-top: 120px; */
       transform: translate(-50%, -50%);
     }
   
@@ -345,9 +368,13 @@ text-align: center; /* Center inline-block elements within this container */
         margin-top: 20px; 
         line-height: 1.0;
     }
+    .green-content h2 {
+        top: 0;
+        font-size: 1.6rem;
+    }
 
     .save {
-        padding-top: 400px;
+        padding-top: 100px;
         justify-content: center;
     }
 
@@ -1382,3 +1409,48 @@ text-align: center; /* Center inline-block elements within this container */
         height: 30px;
     }
 }
+
+
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+    .green-content h1,
+    .green-content h2 {
+      font-size: 1.5em;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .green-content h1,
+    .green-content h2 {
+      font-size: 1.2em;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .green-content .save a {
+      font-size: 0.9em;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .green-content h1 {
+      margin-left: 60px;
+      margin-top: 100px;
+      transform: translate(-50%, -50%);
+    }
+  
+    .green-content h2 {
+      margin-left: 100px;
+      margin-top: 120px;
+      transform: translate(-50%, -50%);
+    }
+  
+    .green-content h1 span, .green-content h2 span {
+      animation-duration: 4s;
+    }
+  } */

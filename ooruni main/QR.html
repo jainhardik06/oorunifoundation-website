@@ -5,13 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation Payment Gateway</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
     <style>
         body {
-            background: url('../image/qq.png') no-repeat center center fixed;
+            background: url('./image/qq.png') no-repeat center center fixed;
             background-size: cover;
         }
-        
+        #qr-container {
+            text-align: center;
+            display: none;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #30445c;
+            color: #ebb46c;
+            border: none;
+            border-radius: 5px;
+        }
     </style>
+    <script>
+        function getQueryParam(param) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(param);
+        }
+
+        function generateQR(amount) {
+            const upiID = 'eze0008933@cub'; // Only one UPI ID for all donations
+            const upiLink = `upi://pay?pa=${upiID}&pn=Ooruni+Foundation&am=${amount}&cu=INR`;
+
+            document.getElementById("amount-display").textContent = `₹${amount}`;
+
+            const qr = new QRious({
+                element: document.getElementById("qr-code"),
+                value: upiLink,
+                size: 250
+            });
+
+            document.getElementById("qr-container").style.display = "block";
+        }
+
+        window.onload = function () {
+            const amount = getQueryParam("amount");
+            if (amount && !isNaN(amount) && amount > 0) {
+                generateQR(amount);
+            } else {
+                document.getElementById("payment-info").innerHTML = "<p style='color: red;'>Invalid or missing amount. Please go back and try again.</p>";
+            }
+        };
+    </script>
 </head>
 <body class="bg-light">
     <div class="container py-5">
@@ -20,21 +64,22 @@
                 <h2>Complete Your Donation</h2>
             </div>            
             <div class="card-body">
-
-                <!-- QR Code Section -->
-                <div class="text-center mb-4">
-                    <p class="mb-3">Scan the QR Code below to complete your donation.</p>
-                    <img src="https://via.placeholder.com/200" alt="QR Code" class="img-fluid rounded border" style="width: 200px; height: 200px;">
+                <div id="payment-info" class="text-center mb-4">
+                    <p class="mb-3">You are donating: <span id="amount-display" class="fw-bold" style="color: #27ae60;">Loading...</span></p>
                 </div>
 
-                <!-- OR Divider -->
+                <div id="qr-container">
+                    <h3>Scan to Pay</h3>
+                    <canvas id="qr-code"></canvas>
+                    <p id="upi-link"></p>
+                </div>
+
                 <div class="d-flex align-items-center my-4">
                     <hr class="flex-grow-1">
                     <span class="px-3 text-muted">OR</span>
                     <hr class="flex-grow-1">
                 </div>
 
-                <!-- Bank Details Section -->
                 <div class="bg-light p-4 rounded border">
                     <h4 class="mb-3 fw-bold" style="color: #27ae60;">Bank Details</h4>
                     <p><strong>Account Name:</strong> Ooruni Foundation</p>
@@ -49,8 +94,6 @@
                 <div class="d-flex justify-content-center mt-4">
                     <button class="btn btn-success w-100" style="background-color: #27ae60; border-color: #27ae60;">Confirm Payment</button>
                 </div>
-                
-                
             </div>
         </div>
     </div>

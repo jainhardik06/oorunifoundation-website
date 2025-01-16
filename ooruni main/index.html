@@ -4,137 +4,346 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ooruni Foundation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="home.css">
     <style>
+        .hero-section {
+            background-color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero-section img {
+            max-width: 300px;
+            height: auto;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .btn-custom {
+          padding: 10px 20px;
+          border-radius: 30px;
+          font-size: 1rem;
+          margin: 5px;
+          width: 250px; /* Increase the width */
+      }
+        .full-width-img {
+            width: 100%;
+            height: auto;
+        }
+        
       /* slidebar */
 
     .social-sidebar {
-      position: fixed;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 1000;
-    }
-
-    .social-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      background-color: #333;
-      color: #dfd;
-      text-decoration: none;
-      border-radius: 10px 0 0 10px;
-      transition: transform 0.3s, background-color 0.3s;
-    }
-
-    .social-icon i {
-      font-size: 20px;
-    }
-
-    .social-icon:hover {
-      transform: translateX(-10px);
-      background-color: #555;
-    }
-
-    .facebook:hover {
-      background-color: #3b5998;
-    }
-
-    .instagram:hover {
-      background-color: #e4405f;
-    }
-
-    .linkedin:hover {
-      background-color: #0077b5;
-    }
-
-    .youtube:hover {
-      background-color: #ff0000;
-    }
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+      }
+  
+      .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #333;
+        color: #dfd;
+        text-decoration: none;
+        border-radius: 10px 0 0 10px;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+  
+      .social-icon i {
+        font-size: 20px;
+      }
+  
+      .social-icon:hover {
+        transform: translateX(-10px);
+        background-color: #555;
+      }
+  
+      .facebook:hover {
+        background-color: #3b5998;
+      }
+  
+      .instagram:hover {
+        background-color: #e4405f;
+      }
+  
+      .linkedin:hover {
+        background-color: #0077b5;
+      }
+  
+      .youtube:hover {
+        background-color: #ff0000;
+      }
     </style>
 </head>
 <body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="../image/Ooruni_Logo-transformed.png" alt="HelpAge India Logo" class="mb-3">
+        <h1>Let’s Help Transform Elder Lives</h1>
+        <p>Join us in creating a society where our elders can enjoy an active, healthy, and dignified life.</p>
+        <div>
+          <a href="#what-we-do" class="btn btn-dark btn-custom">
+              <i class="fas fa-info-circle"></i> &nbsp; What We Do
+          </a>
+          <a href="#donate" class="btn btn-success btn-custom">
+              <i class="fas fa-donate"></i> &nbsp; Donate
+          </a>
+          <a href="#get-involved" class="btn btn-outline-dark btn-custom">
+              <i class="fas fa-hands-helping"></i> &nbsp; Get Scolarship
+          </a>
+      </div>
+      
+    </section>
+
+    <!-- Full Width Image -->
+    <img src="../image/Untitled design (6).png" alt="Elderly People" class="full-width-img">
+
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-      <div class="container">
-          <!-- Logo -->
-          <a class="navbar-brand fw-bold" href="index.html">
-              <img src="logo.png" alt="Ooruni Logo" class="me-2">
-          </a>
-          <!-- Mobile Toggle -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navbar Links -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                      <a class="nav-link mx-2 active fw-bold" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link mx-2" href="about.html">About Us</a>
-                  </li>
-                  <li class="nav-item dropdown">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="logo.png" alt="Ooruni Logo" class="me-2">
+            </a>
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active fw-bold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-2 " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Work
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="education.html">Education</a></li>
+                            <li><a class="dropdown-item" href="equal-opportunity.html">Equal Opportunity</a></li>
+                            <li><a class="dropdown-item" href="freedom-carnival.html">Freedom Carnival</a></li>
+                            <li><a class="dropdown-item" href="wwaa.html">WWAA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Our Work
+                          Media
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="environment.html">Environment</a></li>
-                          <li><a class="dropdown-item" href="education.html">Education</a></li>
-                          <li><a class="dropdown-item" href="equal-opportunity.html">Equal Opportunity</a></li>
-                          <li><a class="dropdown-item" href="freedom-carnival.html">Freedom Carnival</a></li>
-                          <li><a class="dropdown-item" href="wwaa.html">WWAA</a></li>
+                          <li><a class="dropdown-item" href="gallery.html">Events Gallery</a></li>
+                          <li><a class="dropdown-item" href="media.html">Media Coverage</a></li>
                       </ul>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Media
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="gallery.html">Events Gallery</a></li>
-                        <li><a class="dropdown-item" href="media.html">Media Coverage</a></li>
-                    </ul>
-                </li>
-                  <li class="nav-item">
-                      <a class="nav-link mx-2" href="contact.html">Contact</a>
-                  </li>
-              </ul>
-              <!-- CTA Button -->
-              <a href="donate.html" class="button-73">Donate</a>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- CTA Button -->
+                <a href="donate.html" class="button-73">Donate</a>
+            </div>
+        </div>
+      </nav>
+
+      <!--Slidebar-->
+    <div class="social-sidebar">
+        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank" class="social-icon youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+     </div>
+
+     <span class="section-header">
+      <span class="line"></span>
+      <h3><b>Know About Us</b></h3>
+  </span>
+  <div class="about-content">
+      <p><b>We help nature smile and<br> survive everywhere</b></p>
+      <div class="about-content1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quibusdam unde fugiat iure nobis quaerat ,</p>
+      </div>
+      <div class="about-content2">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Quas, quae dolore architecto impedit voluptatum nam, <br> tempore excepturi quibusdam soluta numquam <br>consequuntur perferendis alias dolores vitae ut labore,<br> repudiandae ipsa!</p>
+      </div>
+     <div class="learn-more">
+          <button>Learn more</button>
+      </div>
+      <img src="../image/3.jpg">
+  </div>
+      
+  <div class="our-work">
+      <div class="work-title">
+          <span class="line-work"></span>
+          <div class="work-name">
+              <h3><b>Our work</b></h3>
+          </div>
+          
+      </div>
+  
+      <div class="work-head">
+          <h1>We care for earth, care <br>for the coming birth</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+      
+      <div class="work-disp">
+          <img src="Icon.png" alt="icon">
+          <h2>Build Healthy Cities</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse varius enim in eros.</p>
+          
+          <img src="Icon.png" alt="icon">
+          <h2>Build Healthy Cities</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse varius enim in eros.</p>
+  
+          <img src="Icon.png" alt="icon">
+          <h2>Build Healthy Cities</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Suspendisse varius enim in eros.</p>
+  
+      </div>
+  
+      <div class="work-img">
+          <img src="../image/bb.jpg" alt="">
+      </div>
+      
+  </div>
+  
+  <section class="events-section">
+  
+      <span class="event-header">
+          <span class="line-event"></span>
+          <h3><b>Events</b></h3>
+      </span>
+  
+      <div class="event-head">
+          <h1><b>We are Creating sustainable <br>society, for everyone and <br>forever.</b></h1>
+      </div>
+  
+      <div class="events-cards">
+          <div class="card" style="background-image: url('../work_images/a.png');">
+              <div class="card-content">
+                  <h2>Mission 40K: Tree <br> plantation</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Suspendisse varius enim in<br> eros.</p>
+                  <button class="see-more-btn">See more</button>
+              </div>
+          </div>
+          <div class="card" style="background-image: url('../work_images/b.png');">
+              <div class="card-content">
+                  <h2>Weekly cleanliness<br>program in city</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Suspendisse varius enim in <br>eros.</p>
+                  <button class="see-more-btn">See more</button>
+              </div>
+          </div>
+          <div class="card" style="background-image: url('../work_images/c.png');">
+              <div class="card-content">
+                  <h2>Wildlife safety program <br>2021</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Suspendisse varius enim in<br> eros.</p>
+                  <button class="see-more-btn">See more</button>
+              </div>
           </div>
       </div>
-  </nav>    
-    
+  </section>
+  
+  <section class="donation-section">
+      <div class="donation-content">
+          <h1>How we spend your donations<br><span>and where it goes</span></h1>
+          <p>We understand that when you make a donation, you want to know exactly where your money is going and we pledge to be transparent.</p>
+          <ul class="donation-legend">
+              <li><span class="legend-color" style="background-color: #C2F0C2;"></span> 40% planting trees</li>
+              <li><span class="legend-color" style="background-color: #C5B4F0;"></span> 35% cleanliness program</li>
+              <li><span class="legend-color" style="background-color: #FCECB8;"></span> 10% helping people</li>
+              <li><span class="legend-color" style="background-color: #F8D578;"></span> 10% animal safety</li>
+              <li><span class="legend-color" style="background-color: #F79AC4;"></span> 5% feeding the poor</li>
+          </ul>
+      </div>
+      <div class="donation-chart">
+          <div class="chart">
+              <div class="chart-inner">Oorni <br> Foundation</div>
+              <div class="chart-section" style="--size: 40%; --color: #C2F0C2;"></div>
+              <div class="chart-section" style="--size: 35%; --color: #C5B4F0;"></div>
+              <div class="chart-section" style="--size: 10%; --color: #FCECB8;"></div>
+              <div class="chart-section" style="--size: 10%; --color: #F8D578;"></div>
+              <div class="chart-section" style="--size: 5%; --color: #F79AC4;"></div>
+          </div>
+      </div>
+  </section>
+  
+  <section class="news-section">
+  
+      <div class="news">
+          <span class="line-news"></span>
+          <div class="news-name">
+              <h3><b>Read our News</b></h3>
+          </div>
+          
+      </div>
+  
+      <div class="news-container">
+        <!-- News 1 -->
+        <div class="news-card">
+          <img src="news.png" alt="Greenery" class="news-image">
+          <h3 class="news-title">Don’t destroy greenery and don’t spoil scenery</h3>
+          <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+        </div>
+        <!-- News 2 -->
+        <div class="news-card">
+          <img src="news.png" alt="Climate Change" class="news-image">
+          <h3 class="news-title">Is climate change happening faster than expected?</h3>
+          <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+        </div>
+        <!-- News 3 -->
+        <div class="news-card">
+          <img src="news.png" alt="Wind Farms" class="news-image">
+          <h3 class="news-title">Top 10 facts about wind farms you didn't know</h3>
+          <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+        </div>
+        <!-- News 4 -->
+        <div class="news-card">
+          <img src="news.png" alt="Water Goal" class="news-image">
+          <h3 class="news-title">Our goal is to make water available for everyone</h3>
+          <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim.</p>
+        </div>
+      </div>
+    </section>
 
-    <!--Slidebar-->
-    <div class="social-sidebar">
-      <a href="https://facebook.com" target="_blank" class="social-icon facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://instagram.com" target="_blank" class="social-icon instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://youtube.com" target="_blank" class="social-icon youtube">
-        <i class="fab fa-youtube"></i>
-      </a>
-   </div>
 
 
 
 
 
 
-    <!-- Footer -->
+
+
+
+
+      <!-- Footer -->
     <div class="w-100" style="background-color: #000000;">
         <footer class="container py-5" style="padding-top: 50px; padding-bottom: 30px;">
           <div class="row">
@@ -195,10 +404,9 @@
             </ul>
           </div>
         </footer>
-      </div>     
-      
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="script.js">
 </body>
 </html>

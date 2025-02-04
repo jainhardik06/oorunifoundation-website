@@ -1,0 +1,350 @@
+
+
+html, body{
+  overflow-x: hidden;
+}/* Dropdown styling specific to Our Work */
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+   background-color: #dfd !important; /* Light green background on hover/click */
+   color: black !important; /* Maintains black text for visibility */
+}
+/* CSS to handle hover on large screens */
+@media (min-width: 992px) {
+   .navbar .dropdown:hover .dropdown-menu {
+       display: block;
+   }
+}
+
+/* Ensure that the dropdown does not stay open on mobile when not needed */
+@media (max-width: 991px) {
+   .navbar .dropdown .dropdown-menu {
+       display: none;
+   }
+
+   .navbar .dropdown .dropdown-menu.show {
+       display: block;
+   }
+}
+@media (max-width: 992px) {
+ .dropdown-menu .dropdown-item.active {
+     background-color: #fdf !important;
+     color: black;
+ }
+}
+
+/* From Uiverse.io by cssbuttons-io, modified for .button-73 */
+.button-73 {
+   --color: rgb(0, 149, 0);
+   font-family: inherit;
+   display: inline-block;
+   width: 8em;
+   height: 2.6em;
+   line-height: 2.6em; /* Matches height for vertical centering */
+   margin: 20px;
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+   border: 2px solid var(--color);
+   transition: color 0.5s;
+   z-index: 1;
+   font-size: 17px;
+   border-radius: 6px;
+   font-weight: 500;
+   color: var(--color);
+   text-decoration: none; /* Remove underline */
+   text-align: center; /* Ensures horizontal centering */
+   padding: 0; /* Removes extra padding */
+}
+
+.button-73:before {
+content: "";
+position: absolute;
+z-index: -1;
+background: var(--color);
+height: 150px;
+width: 200px;
+border-radius: 50%;
+}
+
+.button-73:hover {
+color: #fff;
+}
+
+.button-73:before {
+top: 100%;
+left: 100%;
+transition: all 0.7s;
+}
+
+.button-73:hover:before {
+top: -30px;
+left: -30px;
+}
+
+.button-73:active:before {
+background: rgb(0, 0, 0);
+transition: background 0s;
+}
+
+/* Additional styles for centering and parent container if needed */
+.button-container {
+text-align: center; /* Center inline-block elements within this container */
+}
+
+
+.hero-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+.team img {
+  border-radius: 50%;
+}
+
+
+/*-------Donate Sticky--------*/
+.donate-sticky {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  background-color: #43893f;
+  padding: 10px 15px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth animation */
+}
+
+.donate-sticky:hover {
+  background-color: #2e702e; /* Slightly darker blue on hover */
+  transform: translateY(-50%) scale(1.1); /* Scale up slightly */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 20px; /* Stronger shadow */
+}
+
+.donate-sticky img {
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+  transition: transform 0.3s ease; /* Add animation to the image */
+}
+
+.donate-sticky:hover img {
+  transform: rotate(-15deg); /* Rotate the hand icon slightly on hover */
+}
+
+.donate-sticky a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .donate-sticky {
+      display: none;
+  }
+}* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-text {
+    padding: 35px;
+}
+
+.text-head {
+    text-align: center;
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 400;
+    font: bolder;
+    font-size: 55px;
+    font-style: normal;
+}
+
+.text-subhead {
+    color: #353535;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 10px;
+}
+
+.card1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: .08s ease-in-out;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid #b2b9c2;
+    width: 18vw;
+    height: 37vh;
+    margin: 25px 20px 20px 20px;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+
+.card-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 4px;
+
+}
+
+.card-txt {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.card-txt h4 {
+    color: #333;
+}
+
+.card-txt h4 {
+    color: #000000;
+    font: 400;
+    font-size: 17px;
+    width: 100%;
+    font-weight: 350;
+}
+
+.project-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+.team img {
+    border-radius: 50%;
+}
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.foot {
+    margin-top: 100px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px ;
+  padding: 20px;
+  width: min(300px, 100%);
+  background-color: #fefefe;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  color: #141417;
+  transition: box-shadow 0.3s ease; 
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card__hero {
+  background-image: url(images/1.jpg);
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  height: 40vh;
+}
+
+.card__hero .card__job-title {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-right: 2rem;
+}
+
+.card__job-title {
+  font-size: 1rem;
+  align-items: center;
+}
+
+.card__hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0.75rem;
+  row-gap: 1rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+  @media (min-width: 340px) {
+    .card__footer {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+  .card__job-summary {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+  }
+  .card__btn {
+    width: 100%;
+    font-weight: 400;
+    border: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5rem 1.25rem;
+    border-radius: 1rem;
+    background-color: #141417;
+    color: #fff;
+    font-size: 1rem;
+  }
+  @media (min-width: 340px) {
+    .card__btn {
+      width: max-content;
+    }
+  }
+  

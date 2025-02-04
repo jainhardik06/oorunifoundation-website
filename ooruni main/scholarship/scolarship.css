@@ -1,0 +1,621 @@
+
+
+html, body{
+    overflow-x: hidden;
+ }/* Dropdown styling specific to Our Work */
+ .dropdown-item:hover,
+ .dropdown-item:focus,
+ .dropdown-item:active {
+     background-color: #dfd !important; /* Light green background on hover/click */
+     color: black !important; /* Maintains black text for visibility */
+ }
+ /* CSS to handle hover on large screens */
+ @media (min-width: 992px) {
+     .navbar .dropdown:hover .dropdown-menu {
+         display: block;
+     }
+ }
+ 
+ /* Ensure that the dropdown does not stay open on mobile when not needed */
+ @media (max-width: 991px) {
+     .navbar .dropdown .dropdown-menu {
+         display: none;
+     }
+ 
+     .navbar .dropdown .dropdown-menu.show {
+         display: block;
+     }
+ }
+ @media (max-width: 992px) {
+   .dropdown-menu .dropdown-item.active {
+       background-color: #fdf !important;
+       color: black;
+   }
+ }
+
+ /* From Uiverse.io by cssbuttons-io, modified for .button-73 */
+ .button-73 {
+     --color: rgb(0, 149, 0);
+     font-family: inherit;
+     display: inline-block;
+     width: 8em;
+     height: 2.6em;
+     line-height: 2.6em; /* Matches height for vertical centering */
+     margin: 20px;
+     position: relative;
+     cursor: pointer;
+     overflow: hidden;
+     border: 2px solid var(--color);
+     transition: color 0.5s;
+     z-index: 1;
+     font-size: 17px;
+     border-radius: 6px;
+     font-weight: 500;
+     color: var(--color);
+     text-decoration: none; /* Remove underline */
+     text-align: center; /* Ensures horizontal centering */
+     padding: 0; /* Removes extra padding */
+ }
+
+.button-73:before {
+content: "";
+position: absolute;
+z-index: -1;
+background: var(--color);
+height: 150px;
+width: 200px;
+border-radius: 50%;
+}
+
+.button-73:hover {
+color: #fff;
+}
+
+.button-73:before {
+top: 100%;
+left: 100%;
+transition: all 0.7s;
+}
+
+.button-73:hover:before {
+top: -30px;
+left: -30px;
+}
+
+.button-73:active:before {
+background: rgb(0, 0, 0);
+transition: background 0s;
+}
+
+/* Additional styles for centering and parent container if needed */
+.button-container {
+text-align: center; /* Center inline-block elements within this container */
+}
+
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+.team img {
+    border-radius: 50%;
+}
+
+
+/*-------Donate Sticky--------*/
+.donate-sticky {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    background-color: #43893f;
+    padding: 10px 15px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+.donate-sticky:hover {
+    background-color: #2e702e; /* Slightly darker blue on hover */
+    transform: translateY(-50%) scale(1.1); /* Scale up slightly */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 20px; /* Stronger shadow */
+}
+
+.donate-sticky img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Add animation to the image */
+}
+
+.donate-sticky:hover img {
+    transform: rotate(-15deg); /* Rotate the hand icon slightly on hover */
+}
+
+.donate-sticky a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .donate-sticky {
+        display: none;
+    }
+
+    
+}* {
+    margin: 0;
+    padding: 0;
+}
+
+#modal {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe08, #00f1fe37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(0px); /* Start with no blur */
+    transition: backdrop-filter 0.6s ease-in-out; /* Smooth transition for backdrop-filter */
+    backdrop-filter: blur(8px); /* Apply blur effect */
+}
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: white;
+      padding: 0px 25px 25px 25px;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-height: 92%;
+      overflow-y: auto;
+      overflow-y: auto; /* Enable vertical scrolling */
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+      scrollbar-width: none; /* Firefox */
+    }
+
+    .modal-content::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Opera */
+      }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      height: 10vh;
+      background: white;
+      z-index: 10;
+      padding: 45px 10px !important;
+    }
+
+    .modal-header h2 {
+      margin: 0;
+      font: bolder;
+    }
+
+    .close {
+      cursor: pointer;
+      font-size: 1.5em;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-inline {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .form-inline .form-group {
+      flex: 1;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #submit-btn {
+      background-color: #454545;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+    #submit-btn:hover {
+      background-color: #282828;
+    }
+
+.project-section {
+    text-align: center;
+    margin: 40px 0; /* Adds space above and below */
+}
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+.team img {
+    border-radius: 50%;
+}
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    background-color: #EFF7F2;
+    line-height: .9rem;
+}
+
+.first h1 {
+    font-size: 55px;
+    font: bolder;
+}
+.first h3 {
+    font-size: 28px;
+    font: bolder;
+}
+.first button {
+    scale: 115%;
+
+}
+
+.line {
+    width: 80px; /* Length of the horizontal line */
+    height: 6px; /* Thickness of the line */
+    background-color: #000000; /* Color of the line */
+    margin-left: 130px;
+    margin-top: 70px;
+}
+
+.project-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: -17px;
+    letter-spacing: .08rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 140px 0;
+}
+
+.mid1 {
+    width: 50%;
+}
+.mid2 {
+    margin-top: -130px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    padding: 70px 0; 
+
+}
+
+.head1 {
+    font: bolder !important;
+    font-size: 50px !important;
+}
+
+.head5 {
+    text-align: left;
+    padding: 0px 0;
+    margin-top: -20px;
+}
+
+.box1 {
+    width: 80%;
+    height: 110%;
+    padding: 20px 20px;
+    /* border: 1px black solid; */
+    border-radius: 20px;
+    margin-left: 60px;
+    background-color: #EFF7F2;
+
+    /* transform: scale(1.1); 
+    box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.3);  */
+}
+      
+.head2 {
+    font-size: 33px;
+    text-align: center;
+}
+
+.box1 hr {
+    width: 100%; /* Length of the horizontal line */
+    height: 1.5px; /* Thickness of the line */
+    background-color: #000000; /* Color of the line */
+    border: none !important;
+}
+
+.form-text {
+    font-size: 16px !important;
+    color: #000 !important;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+form small {
+    font-size: 15px;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+#but {
+    background-color: #EFF7F2 !important;
+    color: rgb(41, 41, 41);
+    font-size: large;
+}
+
+.img1 {
+    display: block;
+    background-color: rgb(200, 255, 0);
+    width: 18vw;
+    height: 55vh;
+    overflow: hidden;
+    z-index: 9;
+    position: absolute;
+}
+.img1 img {
+    width: fit-content;
+    height: 55vh;
+    position: absolute;
+
+}
+.img2 {
+    margin-left: 200px;
+    margin-top: 160px;
+    z-index: 1;
+    display: block;
+    background-color: rgb(200, 255, 0);
+    width: 18vw;
+    height: 55vh;
+    overflow: hidden;
+    position: absolute;
+}
+.img2 img {
+    width: fit-content;
+    height: 60vh;
+    position: absolute;
+
+}
+
+#inp-grp {
+    padding: 60px 0;
+}
+
+#button-addon2 {
+    background-color: #db3545 !important;
+    font: 900;
+    color: #ffffff;
+    border: none;
+    
+}
+
+.box-el {
+    background-color: #f0f7f387;
+    min-height: 50vh;
+    margin: 30px 120px 30px 120px;
+    border-radius: 20px;
+    border: 2px solid rgb(153, 153, 153);
+}
+.box-el h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.list1 {
+    padding: 20px 60px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+
+    /* Base styles (unchanged) */
+    /* Existing styles remain here */
+
+    /* Media Queries */
+    /* Tablet Screens (768px and below) */
+    @media (max-width: 768px) {
+        .navbar-brand img {
+            width: 80px; /* Adjust logo size */
+        }
+
+        .navbar-nav {
+            font-size: 14px; /* Adjust font size */
+        }
+
+        .main {
+            flex-direction: column; /* Stack sections vertically */
+            padding: 20px; /* Reduce padding */
+        }
+
+        .mid1, .mid2 {
+            width: 100%; /* Full width */
+        }
+
+        .mid2 {
+            margin-top: 20px; /* Add spacing between stacked sections */
+        }
+
+        .img1, .img2 {
+            margin: 0 auto; /* Center images */
+            width: 80%; /* Reduce image size */
+        }
+
+        .box-el {
+            margin: 20px; /* Reduce margin */
+        }
+
+        footer {
+            padding: 10px 0; /* Reduce padding */
+        }
+
+        .form-inline {
+            flex-direction: column; /* Stack form fields vertically */
+            gap: 5px; /* Reduce spacing */
+        }
+
+        .form-group {
+            width: 100%; /* Full width for inputs */
+        }
+    }
+
+    /* Mobile Screens (576px and below) */
+    @media (max-width: 576px) {
+        .head1 {
+            text-align: center;
+        }
+        .head5 {
+            margin-top: -30px;
+            text-align: center;
+        }
+        .mid2{
+            display: none;
+        }
+        .first {
+            height: 50vh; /* Adjust height */
+            text-align: center; /* Center text */
+            padding: 20px; /* Add padding */
+        }
+
+        .first h1 {
+            font-size: 45px; /* Smaller font size */
+        }
+
+        .first h3 {
+            font-size: 18px; /* Smaller font size */
+        }
+
+        .navbar-toggler {
+            font-size: 14px; /* Adjust toggle size */
+        }
+
+        .main {
+            margin: 20px 0; /* Reduce margins */
+        }
+
+        .list1 {
+            padding: 22px; /* Reduce padding */
+            font-size: 14px; /* Smaller font size */
+        }
+
+        .footer {
+            font-size: 12px; /* Smaller font size */
+        }
+
+        .modal-content {
+            width: 95%; /* Adjust modal width */
+            padding: 10px; /* Add padding */
+        }
+
+        .modal-header {
+            flex-direction: row; /* Stack header elements */
+            text-align: center;
+        }
+    }

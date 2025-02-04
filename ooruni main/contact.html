@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooruni Foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .hero-section {
+            background-color: #EBF0F9; /* Hero Section Background */
+            padding: 70px 20px; /* Spacing */
+        }
+        .contact-details {
+            padding-left: 55px;
+        }
+        .social-icons a {
+            margin-right: 15px;
+            color: #555;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #000;
+        }
+        .contact-form-container {
+            max-width: 600px; /* Limit the form width */
+            margin: 0 auto; /* Center the form */
+            padding: 20px; /* Add padding for better spacing */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="logo.png" alt="Ooruni Logo" class="me-2">
+            </a>
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Work
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="education.html">Education</a></li>
+                            <li><a class="dropdown-item" href="equal-opportunity.html">Equal Opportunity</a></li>
+                            <li><a class="dropdown-item" href="freedom-carnival.html">Freedom Carnival</a></li>
+                            <li><a class="dropdown-item" href="wwaa.html">WWAA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Media
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="gallery.html">Events Gallery</a></li>
+                          <li><a class="dropdown-item" href="media.html">Media Coverage</a></li>
+                      </ul>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active fw-bold" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- CTA Button -->
+                <a href="donate.html" class="button-73">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Donate sticky -->
+    <div class="donate-sticky">
+        <a href="donate.html" target="_blank">
+            <img src="../image/image.png" alt="Donate">
+            DONATE
+        </a>
+    </div>
+
+    <!-- Hero and Contact Section -->
+    <section class="hero-section">
+    <div class="container">
+        <!-- Place "CONTACT US" at the top-left -->
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center mb-3">
+                    <hr style="width: 25px; border-top: 2px solid #000; margin-right: 10px;">
+                    <span class="text-uppercase fw-bold" style="color: black;">Contact Us</span>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <!-- Hero Text -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="fw-bold" style="font-size: 2.5rem;">We'd love to hear from you</h2>
+                <p class="text-muted">
+                    Have any questions in mind or want to enquire? Please feel free to contact us through the form or the following details.
+                </p>
+            </div>
+            <!-- Contact Details -->
+            <div class="col-lg-6 contact-details">
+                <h5 class="fw-bold">Let's talk!</h5>
+                <p>
+                    <strong>Phone:</strong> +91 95516 48732<br>
+                    <strong>Email:</strong> oorunifoundation@gmail.com
+                </p>
+                <h6 class="fw-bold mt-4">Regd. Office Address</h6>
+                <p>No 18A, First Floor, Patel Cross Street, Nehru Nagar, Chompet, Chennai, 600044.<br>India</p>
+                <h6 class="fw-bold mt-4">Correspondence Office Address</h6>
+                <p>Level 2 , Setraa Towers, No. 304, GST Road, Chrompet, Chennai, 600044.<br>India</p>
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    
+    
+
+    <!-- Contact Form Section -->
+    <section class="py-5 mb-5 mt-5" style="background-color: #ffff;">
+        <div class="container">
+            <div class="contact-form-container">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="John">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="johndoe@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Your subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Type your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="w-100">
+        <div class="container-fluid p-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.26581618387!2d80.1418734!3d12.954835099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb2d8a410e5%3A0x1f694619db18f6b1!2sOoruni%20Foundation!5e0!3m2!1sen!2sin!4v1734187209887!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div class="w-100" style="background-color: #000000;">
+        <footer class="container py-5" style="padding-top: 50px; padding-bottom: 30px;">
+          <div class="row">
+            <!-- Column 1: About Us -->
+            <div class="col-6 col-md-2 mb-4" style="padding-top: 20px;">
+              <h5 class="text-white">Our Team</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Team</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">What We Do</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 2: More -->
+            <div class="col-6 col-md-2 mb-4" style="padding-top: 20px;">
+              <h5 class="text-white">More</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Projects</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Events</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Donate</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Blog</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 3: Connect -->
+            <div class="col-6 col-md-2 mb-4" style="padding-top: 20px;">
+              <h5 class="text-white">Connect</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Facebook</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Instagram</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Twitter</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">LinkedIn</a></li>
+              </ul>
+            </div>
+      
+            <!-- Column 4: Subscribe -->
+            <div class="col-md-5 offset-md-1 mb-4" style="padding-top: 20px;">
+              <form>
+                <h5 class="text-white">Subscribe to get latest updates</h5>
+                <p class="text-light">Stay updated with our projects, events, and more.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="email" class="form-control" placeholder="Your email">
+                  <button class="btn btn-danger" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <!-- Footer Bottom -->
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 border-top" style="border-color: #444444;">
+            <p class="mb-0 text-light">© 2024 Ooruni Foundation. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-light" href="#" aria-label="Twitter"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+              <li class="ms-3"><a class="link-light" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+              <li class="ms-3"><a class="link-light" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>     
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="script.js">
+</body>
+</html>

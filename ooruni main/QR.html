@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Payment Gateway</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <style>
+        body {
+            background: url('./image/qq.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        #qr-container {
+            text-align: center;
+            display: none;
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #30445c;
+            color: #ebb46c;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function getQueryParam(param) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(param);
+        }
+
+        function generateQR(amount) {
+            const upiID = 'eze0008933@cub'; // Only one UPI ID for all donations
+            const upiLink = `upi://pay?pa=${upiID}&pn=Ooruni+Foundation&am=${amount}&cu=INR`;
+
+            document.getElementById("amount-display").textContent = `₹${amount}`;
+
+            const qr = new QRious({
+                element: document.getElementById("qr-code"),
+                value: upiLink,
+                size: 250
+            });
+
+            document.getElementById("qr-container").style.display = "block";
+        }
+
+        window.onload = function () {
+            const amount = getQueryParam("amount");
+            if (amount && !isNaN(amount) && amount > 0) {
+                generateQR(amount);
+            } else {
+                document.getElementById("payment-info").innerHTML = "<p style='color: red;'>Invalid or missing amount. Please go back and try again.</p>";
+            }
+        };
+    </script>
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="card shadow-lg mx-auto" style="max-width: 700px;">
+            <div class="card-header text-white text-center" style="background-color: #27ae60;">
+                <h2>Complete Your Donation</h2>
+            </div>            
+            <div class="card-body">
+                <div id="payment-info" class="text-center mb-4">
+                    <p class="mb-3">You are donating: <span id="amount-display" class="fw-bold" style="color: #27ae60;">Loading...</span></p>
+                </div>
+
+                <div id="qr-container">
+                    <h3>Scan to Pay</h3>
+                    <canvas id="qr-code"></canvas>
+                    <p id="upi-link"></p>
+                </div>
+
+                <div class="d-flex align-items-center my-4">
+                    <hr class="flex-grow-1">
+                    <span class="px-3 text-muted">OR</span>
+                    <hr class="flex-grow-1">
+                </div>
+
+                <div class="bg-light p-4 rounded border">
+                    <h4 class="mb-3 fw-bold" style="color: #27ae60;">Bank Details</h4>
+                    <p><strong>Account Name:</strong> Ooruni Foundation</p>
+                    <p><strong>Account Number:</strong> 500101011499464</p>
+                    <p><strong>MICR Code:</strong> 600054040</p>
+                    <p><strong>Bank Name:</strong> City Union</p>
+                    <p><strong>Branch:</strong> Chitlappakkam</p>
+                    <p><strong>IFSC Code:</strong> CIUB0000295</p>
+                </div>
+
+                <!-- User Actions -->
+                <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-success w-100" style="background-color: #27ae60; border-color: #27ae60;">Confirm Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

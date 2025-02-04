@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooruni Foundation - Donation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        /* Styles for donation form and image container */
+        .form-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: none;
+        }
+
+        .form-container h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-success {
+            background-color: #27ae60 !important;
+            border-color: #27ae60 !important;
+        }
+
+        .btn-container button {
+            width: 48%;
+        }
+
+        .btn-previous {
+            background-color: white !important;
+            border: 2px solid #27ae60 !important;
+            color: #27ae60 !important;
+            border-radius: 8px !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="logo.png" alt="Ooruni Logo" class="me-2">
+            </a>
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 active fw-bold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Work
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="environment.html">Environment</a></li>
+                            <li><a class="dropdown-item" href="education.html">Education</a></li>
+                            <li><a class="dropdown-item" href="equal-opportunity.html">Equal Opportunity</a></li>
+                            <li><a class="dropdown-item" href="freedom-carnival.html">Freedom Carnival</a></li>
+                            <li><a class="dropdown-item" href="wwaa.html">WWAA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="gallery.html">Events Gallery</a></li>
+                            <li><a class="dropdown-item" href="media.html">Media Coverage</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- CTA Button -->
+                <a href="donate.html" class="button-73">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <!-- Form Container -->
+            <div class="col-md-12 form-container">
+                <h3 class="text-center fw-bold">Donate to Ooruni Foundation</h3>
+                <form id="donationForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobile" class="form-label">Mobile Number</label>
+                        <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="donationType" class="form-label">Donation Type</label>
+                        <select class="form-select" id="donationType" required>
+                            <option value="">Select Donation Type</option>
+                            <option value="education">Education</option>
+                            <option value="environment">Environment</option>
+                            <option value="health">Health</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="donationAmount" class="form-label">Donation Amount</label>
+                        <input type="number" class="form-control" id="donationAmount" placeholder="Enter donation amount" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <h4>Donation Summary</h4>
+                        <p><strong>Donation Amount: </strong>₹<span id="amountPreview"></span></p>
+                    </div>
+
+                    <div class="d-flex justify-content-between btn-container">
+                        <button type="button" class="btn btn-previous" onclick="location.href='donate.html'">Previous</button>
+                        <button type="submit" class="btn btn-success">Proceed to Payment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Ooruni Foundation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function getQueryParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const amount = urlParams.get('amount');
+            const type = urlParams.get('type');
+            return { amount, type };
+        }
+
+        function previewAmount(amount) {
+            document.getElementById('amountPreview').innerText = amount;
+        }
+
+        function setDonationAmount(amount) {
+            localStorage.setItem('donationAmount', amount);
+        }
+
+        document.getElementById('donationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var donationAmount = document.getElementById('donationAmount').value;
+            var donationType = document.getElementById('donationType').value;
+
+            if (donationAmount && donationType) {
+                setDonationAmount(donationAmount);
+
+                window.location.href = 'qr.html?amount=' + donationAmount + '&type=' + donationType;
+            } else {
+                alert('Please enter a valid donation amount and type.');
+            }
+        });
+
+        window.onload = function() {
+            const queryParams = getQueryParams();
+            if (queryParams.amount) {
+                previewAmount(queryParams.amount);
+                document.getElementById('donationAmount').value = queryParams.amount;
+            }
+        };
+    </script>
+
+</body>
+</html>
